@@ -6,3 +6,35 @@ Thats the state where you added your files and they're waiting for commit
 
 To commit changes in the staging area use:
 git commit
+
+Writing git diff without any id of commits you'd compare last file in staging are with the file in working directory
+
+Writing git diff --staged you'd see differences beetwen your last commit and stage area
+
+In order to delete all changes in stage area and working directory use command: git reset --hard.
+Use it rarely, because it delate all the changes and you cant see them again, whereas you can see previous commits
+
+BRANCHES
+master - name given to the main branch
+merging- combining two branches
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches are helpful, when i need to create another version, i experiment and so on
+
+eIf you want to create a new branch to save this commit use -b with the checkout command
+git checkout -b new_branch_name
+
+MERGING FILES
+
+*if you'd like to delete unreachable commits (without brench) use commnad: git gc
+
+to connect to branches use command:
+git merge branch2 branch3
+
+to see changes beetwen commits, but not parent use
+git show commit
+
+Deleting a branch label:
+git branch -d bramch_name
+
+In order to see changes in nice way use command:
+git log --graph --oneline
